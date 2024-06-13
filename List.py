@@ -32,10 +32,18 @@ print(list1)  # 输出: [1, 2, 3, 4, 5, 6]
 
 '''
 
-# index()：返回第一个匹配元素的索引
+# index()：返回第一个匹配元素的索引 返回整数类型的数据
 # list.index(element, start, end)
 '''
 element：要查找的元素。
 start（可选）：搜索的起始位置（包含）。默认值为 0。
 end（可选）：搜索的结束位置（不包含）。默认值为列表的长度。
+'''
+'''
+元素不在list中时，引发valueError异常
+numbers = [1, 2, 3, 4, 5]
+try:
+    index_of_7 = numbers.index(7)
+except ValueError:
+    print("Element not found in the list.")
 '''
