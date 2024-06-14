@@ -11,7 +11,7 @@ sub_list = iList[:] #获取所有元素
 # append() 在列表末尾添加一个元素
 # insert(a, b) 在list[a]处添加数值为b的元素
 # extend(a)：使用列表a扩展当前列表
-
+# pop(a) 删除并返回list[a]的元素，pop() 删除并返回最后一个元素
 '''
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
