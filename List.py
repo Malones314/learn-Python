@@ -47,3 +47,31 @@ try:
 except ValueError:
     print("Element not found in the list.")
 '''
+
+"""
+# 列表推导式
+[expression for item in iterable if condition]
+expression：要生成的元素，可以是任何表达式，包括函数调用和算术运算。
+item：从iterable中逐个取出的元素。
+iterable：可以是任何可迭代对象（如列表、元组、字符串等）。
+condition（可选）：一个过滤条件，只有满足此条件的item才会被包含在生成的列表中。
+"""
+"""
+# 带条件的列表推导式
+even_squares = [x**2 for x in range(10) if x % 2 == 0]
+print(even_squares)  # 输出: [0, 4, 16, 36, 64]
+"""
+"""
+# 嵌套循环
+combinations = [(x, y) for x in range(3) for y in range(3)]
+print(combinations)  # 输出: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)]
+
+#使用函数
+def square(x):
+    return x ** 2
+
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = [square(x) for x in numbers]
+print(squared_numbers)  # 输出: [1, 4, 9, 16, 25]
+"""
+

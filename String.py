@@ -51,3 +51,29 @@ print(byte_array)  # 输出: bytearray(b'hello, Python!')
 my_string = byte_array.decode("utf-8")    #将 bytearray 转换回字符串
 print(my_string)
 """
+# format方法
+"""
+name = "Alice"
+age = 30
+height = 5.4
+
+print("Name: {}, Age: {}, Height: {:.1f}".format(name, age, height))  
+# 输出: Name: Alice, Age: 30, Height: 5.4
+
+
+print(f"Name: {name}, Age: {age}, Height: {height:.1f}")  
+# 输出: Name: Alice, Age: 30, Height: 5.4
+
+
+"""
+# f 字符串（或称为格式化字符串、f-string）
+"""
+通过在字符串前添加字母 f 或 F 来标识，允许在字符串内直接嵌入表达式，并将表达式的值插入到字符串中。
+name = "1"
+greeting = f"Hello, {name}!"
+greeting_ = "Hello, %s!" % name
+greeting__ = "Hello, {}!".format(name)
+print(greeting)  # 输出: Hello, Alice!
+print(greeting_)  # 输出: Hello, 1!
+print(greeting__)  # 输出: Hello, 1!
+"""
